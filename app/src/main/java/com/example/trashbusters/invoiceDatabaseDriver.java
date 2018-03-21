@@ -7,7 +7,7 @@ import android.util.Log;
 
 /**
  * CREATED BY DANIEL OH
- * invoice database will have 6 columns
+ * com.example.trashbusters.invoice database will have 6 columns
  * ID - primary key
  * NAME - both first name last name. put them together
  * ITEMINFO - type of item such as trash, recycle and their weight. in text file.
@@ -17,7 +17,7 @@ import android.util.Log;
 
 public class invoiceDatabaseDriver extends SQLiteOpenHelper{
 
-    private static final String USER_DATABASE_NAME = "invoice.db";
+    private static final String USER_DATABASE_NAME = "com.example.trashbusters.invoice.db";
     private static final int DATABASE_VERSION = 1;
 
     //Initial Table Creation
