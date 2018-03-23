@@ -7,6 +7,7 @@ package com.example.trashbusters;
 
 public class invoice {
 
+    public int id;
     public String name;
     public String itemInfo;
     public String pay;
@@ -17,12 +18,21 @@ public class invoice {
 
     }
 
-    public invoice(String name_, String itemInfo_, String pay_, String time_, String status_) {
+    public invoice(int id_, String name_, String itemInfo_, String pay_, String time_, String status_) {
+        this.id = id_;
         this.name = name_;
         this.itemInfo = itemInfo_;
         this.pay = pay_;
         this.time = time_;
         this.status = status_;
+    }
+
+    public void setId(int n) {
+        this.id = n;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public void setName(String s) {

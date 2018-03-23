@@ -7,6 +7,7 @@ package com.example.trashbusters;
 
 public class users {
 
+    private int usersID;
     private String firstName;
     private String lastName;
     private String email;
@@ -38,6 +39,14 @@ public class users {
         this.userType = userType_;
         this.licenseNumber = licenseNumber_;
         this.plateNumber = plateNumber_;
+    }
+
+    public void setUsersID(int n) {
+        this.usersID = n;
+    }
+
+    public int getUsersID() {
+        return usersID;
     }
 
     public void setFirstName(String s) {
