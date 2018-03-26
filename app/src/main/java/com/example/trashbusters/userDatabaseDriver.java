@@ -7,8 +7,10 @@ import android.util.Log;
 /**
  * Created by Daniel Oh
  *
- * USERS id db will have 13 columns.
+ * USERS id db will have 15 columns.
  * ID - PRIMARY KEY
+ * USERNAME
+ * PASSWORD
  * FIRSTNAME
  * LASTNAME
  * EMAIL
@@ -37,6 +39,8 @@ public class userDatabaseDriver extends SQLiteOpenHelper{
     //Initial Table Creation
     private static final String CREATE_TABLE_USER = "" +
             "CREATE TABLE USERS (_ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
+            "USERNAME TEXT NOT NULL, " +
+            "PASSWORD TEXT NOT NULL, " +
             "FIRSTNAME TEXT NOT NULL, " +
             "LASTNAME TEXT NOT NULL, " +
             "EMAIL TEXT NOT NULL, " +

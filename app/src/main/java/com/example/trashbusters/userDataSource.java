@@ -34,6 +34,8 @@ public class userDataSource {
         try {
             ContentValues initialValues = new ContentValues();
 
+            initialValues.put("USERNAME", u.getUserName());
+            initialValues.put("PASSWORD", u.getPassword());
             initialValues.put("FIRSTNAME", u.getFirstName());
             initialValues.put("LASTNAME", u.getLastName());
             initialValues.put("EMAIL", u.getEmail());
@@ -61,6 +63,8 @@ public class userDataSource {
             Long rowId = (long) u.getUsersID();
             ContentValues updateValues = new ContentValues();
 
+            updateValues.put("USERNAME", u.getUserName());
+            updateValues.put("PASSWORD", u.getPassword());
             updateValues.put("FIRSTNAME", u.getFirstName());
             updateValues.put("LASTNAME", u.getLastName());
             updateValues.put("EMAIL", u.getEmail());
@@ -127,19 +131,22 @@ public class userDataSource {
             users newUsers;
             cursor.moveToFirst();
             while (!cursor.isAfterLast()) {
-                newUsers = new users();                                          //1
-                newUsers.setFirstName(cursor.getString(0));
-                newUsers.setLastName(cursor.getString(1));
-                newUsers.setEmail(cursor.getString(2));
-                newUsers.setPhoneNumber(cursor.getString(3));
-                newUsers.setAddress(cursor.getString(4));
-                newUsers.setCity(cursor.getString(5));
-                newUsers.setState(cursor.getString(6));
-                newUsers.setZip(cursor.getString(7));
-                newUsers.setDob(cursor.getString(8));
-                newUsers.setUserType(cursor.getInt(9));
-                newUsers.setLicenseNumber(cursor.getString(10));
-                newUsers.setPlateNumber(cursor.getString(11));
+                newUsers = new users();
+
+                newUsers.setUserName(cursor.getString(0));
+                newUsers.setPassword(cursor.getString(1));
+                newUsers.setFirstName(cursor.getString(2));
+                newUsers.setLastName(cursor.getString(3));
+                newUsers.setEmail(cursor.getString(4));
+                newUsers.setPhoneNumber(cursor.getString(5));
+                newUsers.setAddress(cursor.getString(6));
+                newUsers.setCity(cursor.getString(7));
+                newUsers.setState(cursor.getString(8));
+                newUsers.setZip(cursor.getString(9));
+                newUsers.setDob(cursor.getString(10));
+                newUsers.setUserType(cursor.getInt(11));
+                newUsers.setLicenseNumber(cursor.getString(12));
+                newUsers.setPlateNumber(cursor.getString(13));
 
                 users.add(newUsers);
                 cursor.moveToNext();
@@ -158,18 +165,20 @@ public class userDataSource {
         Cursor cursor = userDatabase.rawQuery(query, null);
 
         if (cursor.moveToFirst()) {
-            u.setFirstName(cursor.getString(0));
-            u.setLastName(cursor.getString(1));
-            u.setEmail(cursor.getString(2));
-            u.setPhoneNumber(cursor.getString(3));
-            u.setAddress(cursor.getString(4));
-            u.setCity(cursor.getString(5));
-            u.setState(cursor.getString(6));
-            u.setZip(cursor.getString(7));
-            u.setDob(cursor.getString(8));
-            u.setUserType(cursor.getInt(9));
-            u.setLicenseNumber(cursor.getString(10));
-            u.setPlateNumber(cursor.getString(11));
+            u.setUserName(cursor.getString(0));
+            u.setPassword(cursor.getString(1));
+            u.setFirstName(cursor.getString(2));
+            u.setLastName(cursor.getString(3));
+            u.setEmail(cursor.getString(4));
+            u.setPhoneNumber(cursor.getString(5));
+            u.setAddress(cursor.getString(6));
+            u.setCity(cursor.getString(7));
+            u.setState(cursor.getString(8));
+            u.setZip(cursor.getString(9));
+            u.setDob(cursor.getString(10));
+            u.setUserType(cursor.getInt(11));
+            u.setLicenseNumber(cursor.getString(12));
+            u.setPlateNumber(cursor.getString(13));
 
             cursor.close();
         }

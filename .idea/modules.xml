@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TrashBusters.iml" filepath="$PROJECT_DIR$/TrashBusters.iml" />
+      <module fileurl="file://C:\Users\ont06\Documents\GitHub\TrashBusters\TrashBusters.iml" filepath="C:\Users\ont06\Documents\GitHub\TrashBusters\TrashBusters.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\ont06\Documents\GitHub\TrashBusters\app\app.iml" filepath="C:\Users\ont06\Documents\GitHub\TrashBusters\app\app.iml" />
     </modules>
   </component>
 </project>
