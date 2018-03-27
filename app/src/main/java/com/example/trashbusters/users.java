@@ -8,6 +8,8 @@ package com.example.trashbusters;
 public class users {
 
     private int usersID;
+    private String userName;
+    private String password;
     private String firstName;
     private String lastName;
     private String email;
@@ -25,8 +27,11 @@ public class users {
 
     }
 
-    public users(String firstName_, String lastNname_, String email_, String phoneNumber_, String address_,
+    public users(String userName_, String password_,
+            String firstName_, String lastNname_, String email_, String phoneNumber_, String address_,
                  String city_, String state_, String zip_, String dob_, int userType_, String licenseNumber_, String plateNumber_) {
+        this.userName = userName_;
+        this.password = password_;
         this.firstName = firstName_;
         this.lastName = lastNname_;
         this.email = email_;
@@ -47,6 +52,22 @@ public class users {
 
     public int getUsersID() {
         return usersID;
+    }
+
+    public void setUserName(String s) {
+        this.userName = s;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setPassword(String s) {
+        this.password = s;
+    }
+
+    public String getPassword() {
+        return password;
     }
 
     public void setFirstName(String s) {
