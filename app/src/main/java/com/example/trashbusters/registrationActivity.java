@@ -32,4 +32,8 @@ public class registrationActivity extends AppCompatActivity {
                     break;
         }
     }
+
+    public void onSubmitClick(View view) {
+        //fill here for submit button. you will need to call database class for this. check textbook for more detail
+    }
 }
