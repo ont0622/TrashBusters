@@ -46,7 +46,7 @@ public class userDataSource {
             initialValues.put("ZIP", u.getZip());
             initialValues.put("DOB", u.getDob());
             initialValues.put("USERTYPE", u.getUserType());
-            initialValues.put("LICNESENUMBER", u.getLicenseNumber());
+            initialValues.put("LICENSENUMBER", u.getLicenseNumber());
             initialValues.put("PLATENUMBER", u.getPlateNumber());
 
             didSucceed = userDatabase.insert("USERS", null, initialValues) > 0;
@@ -75,7 +75,7 @@ public class userDataSource {
             updateValues.put("ZIP", u.getZip());
             updateValues.put("DOB", u.getDob());
             updateValues.put("USERTYPE", u.getUserType());
-            updateValues.put("LICNESENUMBER", u.getLicenseNumber());
+            updateValues.put("LICENSENUMBER", u.getLicenseNumber());
             updateValues.put("PLATENUMBER", u.getPlateNumber());
 
             didSucceed = userDatabase.update("users", updateValues, "_id=" + rowId, null) > 0;
