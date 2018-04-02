@@ -14,6 +14,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button registerButton;
+    private Button signinButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +29,25 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
+        signinButton = (Button) findViewById(R.id.signinbutton);
+        signinButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                signIn();
+            }
+
+        });
     }
-    
+
 
     public void toRegister() {
         Intent intent = new Intent(this, registrationActivity.class);
+        startActivity(intent);
+    }
+
+    public void signIn() {
+        Intent intent = new Intent(this, userMainMenuActivity.class);
         startActivity(intent);
     }
 
