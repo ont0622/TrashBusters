@@ -12,14 +12,18 @@
         <activity android:name=".MainActivity">
 
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"
-                    />
+                <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".registrationActivity"></activity>
         <activity android:name=".userMainMenuActivity"></activity>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 49e67a386950333fa26c499437a5050071a6a0c4
     </application>
 
 </manifest>
