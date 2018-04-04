@@ -52,3 +52,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
+
+
+/*
+
+public class MainActivity extends AppCompatActivity {
+
+userDatabaseDriver driver = new userDatabaseDriver(this);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+    public void onLoginClick(View view) {
+        if (view.getId() == R.id.signinbutton) {
+            EditText lusername = (EditText) findViewById(R.id.editUser);
+            EditText lpassword = (EditText) findViewById(R.id.editPass);
+
+
+
+
+*/
