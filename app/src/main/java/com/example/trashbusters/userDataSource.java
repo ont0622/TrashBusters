@@ -184,6 +184,17 @@ public class userDataSource {
         }
         return u;
     }
+
+    public boolean userValidation(String id, String password) {
+        ArrayList<users> usersArrayList = getUsers("USERNAME", "");
+        for (int i = 0; i <= usersArrayList.size(); i++) {
+            if (usersArrayList.get(i).getUserName().equals(id)) {
+                if (usersArrayList.get(i).getPassword().equals(password))
+                    return true;
+            }
+        }
+        return false;
+    }
 }
 
 
