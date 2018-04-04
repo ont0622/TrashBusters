@@ -19,6 +19,7 @@
         </activity>
         <activity android:name=".registrationActivity"></activity>
         <activity android:name=".userMainMenuActivity"></activity>
+        <activity android:name=".driverMainMenuActivity"></activity>
 </application>
 
 </manifest>

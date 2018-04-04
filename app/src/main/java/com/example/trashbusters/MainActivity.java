@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 /*
  * User id db will have 12 columns.
@@ -47,8 +48,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void signIn() {
-        Intent intent = new Intent(this, userMainMenuActivity.class);
-        startActivity(intent);
+        EditText type = (EditText) findViewById(R.id.editUser);
+        String userInput = type.getText().toString();
+        if (userInput.equals("user")){
+            Intent intent = new Intent(this, userMainMenuActivity.class);
+            startActivity(intent);
+        }
+        else {
+            Intent intent = new Intent(this, driverMainMenuActivity.class);
+            startActivity(intent);
+        }
     }
 
 }
