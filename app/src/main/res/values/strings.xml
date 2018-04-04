@@ -19,6 +19,6 @@
     <string name="lb">lb</string>
     <string name="button">Button</string>
     <string name="amount_of_trash">Amount of Trash</string>
-    <string name="button">Button</string>
+    <string name="trash_me">Trash Me</string>
 
 </resources>
