@@ -12,6 +12,7 @@
         android:layout_marginBottom="28dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="8dp"
+        android:onClick="toRegister"
         android:text="@string/register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,13 +24,13 @@
         android:layout_width="135dp"
         android:layout_height="55dp"
         android:layout_marginBottom="28dp"
-        android:layout_marginEnd="52dp"
+        android:layout_marginEnd="44dp"
         android:layout_marginTop="8dp"
         android:text="@string/forgot_password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.99" />
 
     <Button
         android:id="@+id/signinbutton"
@@ -39,6 +40,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="signIn"
         android:text="@string/sign_in"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
