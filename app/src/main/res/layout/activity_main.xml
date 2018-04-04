@@ -3,34 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    android:background="@drawable/wallpaperandroid">
 
     <Button
         android:id="@+id/registerbutton"
-        android:layout_width="135dp"
+        android:layout_width="201dp"
         android:layout_height="55dp"
         android:layout_marginBottom="28dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="8dp"
         android:onClick="toRegister"
         android:text="@string/register"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.99" />
-
-    <Button
-        android:id="@+id/buttonforgot"
-        android:layout_width="135dp"
-        android:layout_height="55dp"
-        android:layout_marginBottom="28dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/forgot_password"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.99" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/signinbutton"
